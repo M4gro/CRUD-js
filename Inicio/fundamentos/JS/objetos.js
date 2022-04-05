@@ -17,6 +17,7 @@ class Produto {
         }
         
         this.listarTabelas();
+        this.cancelarProduto();
     }
     listarTabelas()
     {
@@ -36,6 +37,17 @@ class Produto {
             td_preço.innerText = this.arrayProdutos[i].preço;
             
             td_id.classList.add('center');
+            td_acao.classList.add('center');
+
+            let imgEdit = document.createElement('img');
+            imgEdit.src = 'img/edit.png';
+
+            let imgDelete = document.createElement('img');
+            imgDelete.src = 'img/delete.png';
+
+            td_acao.appendChild(imgEdit);
+            td_acao.appendChild(imgDelete);
+
         }
     }
     adicionarProduto(produto)
@@ -69,8 +81,8 @@ class Produto {
     }
     cancelarProduto()
     {
-        alert("Vamos cancelar um produto!");
-        //...
+        document.getElementById('produto').value = '';
+        document.getElementById('preço').value = '';
     }
 }
 //instanciar o objeto dentro da variável
