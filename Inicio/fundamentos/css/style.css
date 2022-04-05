@@ -1,0 +1,85 @@
+/* tirando as margens do arquivo para encostar na borda */
+* {
+    margin: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif; /*adicionando fonte no arquivo*/
+    background-color: #f8f8f8;
+}
+header
+{
+    background-color: blueviolet;
+    padding: 15px; /* espaçamento */
+    color: white;
+    text-align: center;
+}
+main
+{
+    padding: 30px 50px;
+}
+.card
+{
+    margin: 0 auto;
+    width: 450px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.title
+{
+    text-align: center;
+}
+.lineInput
+{
+    display: grid;
+    margin-bottom: 10px;
+}
+input
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0px;
+}
+button
+{
+    border: 0;
+    padding: 10px;
+    outline: 0px;
+    background-color: blueviolet;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+button:hover{
+    background-color: rgb(109, 42, 172);
+}
+.content
+{
+    margin-top: 15px;
+}
+table
+{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 450px;
+}
+table th {
+    background-color: rgb(224, 224, 224);
+}
+table th, td 
+{
+    padding: 1px 5px;
+    text-align: left;
+}
+table td img {
+    width: 20px;
+}
+.center
+{
+    text-align: center;
+}
